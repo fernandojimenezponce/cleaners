@@ -1,0 +1,11 @@
+/* SM breakpoint */
+@media screen and (min-width: 575px) and (max-width: 767px){}
+
+/* MD breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px){}
+
+/* LG breakpoint */
+@media screen and (min-width: 992px) and (max-width: 1199px){}
+
+/* XL breakpoint */
+@media screen and (min-width: 1200px) {}
