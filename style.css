@@ -196,10 +196,10 @@ header .header-content .phone a span {
         padding: 0 15px;
     }
     header .header-content > div {
-        font-size: 14px;
+        font-size: 12px;
     }
     header .header-content .links ul li {
-        padding: 0 6px 26px;
+        padding: 0 4px 26px;
     }
 }
 
@@ -230,7 +230,7 @@ header .header-content .phone a span {
         font-size: 20px;
     }
     header .header-content .links ul li {
-        padding: 0 16px 20px;
+        padding: 0 14px 20px;
     }
 }
 
@@ -247,6 +247,6 @@ header .header-content .phone a span {
     }
 
     header .header-content .links ul li {
-        padding: 0 20px 20px;
+        padding: 0 18px 20px;
     }
 }
