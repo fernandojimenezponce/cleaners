@@ -1,11 +1,252 @@
+/* XS and global styles */
+
+/* Icons */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?fnlvtb');
+    src:  url('fonts/icomoon.eot?fnlvtb#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?fnlvtb') format('truetype'),
+      url('fonts/icomoon.woff?fnlvtb') format('woff'),
+      url('fonts/icomoon.svg?fnlvtb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-plant:before {
+    content: "\e902";
+    color: #000;
+  }
+  .icon-cleaning:before {
+    content: "\e903";
+    color: #000;
+  }
+  .icon-arrow-down:before {
+    content: "\e904";
+    color: #000;
+  }
+  .icon-location:before {
+    content: "\e905";
+    color: #000;
+  }
+  .icon-email:before {
+    content: "\e906";
+    color: #000;
+  }
+  .icon-bucket:before {
+    content: "\e907";
+    color: #000;
+  }
+  .icon-phone:before {
+    content: "\e90c";
+    color: #000;
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+/* end icons */  
+
+html, body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+body{
+    padding-top: 80px;
+    height: 2000px;
+}
+.container-full,
+.container{
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* Backgrounds */
+
+.blue-bg {
+    background-color: #1b5edd;
+}
+.white-bg {
+    background-color: white;
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+}
+
+header .header-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    width: 100%;
+}
+header .header-content > div {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1;
+    padding: 0 15px;
+    font-size: 24px;
+}
+
+header .header-content > div > * {
+    margin: auto;
+    display: block;
+}
+
+header .header-content .logo {
+    padding: 10px 0;
+}
+
+header .header-content .logo img {
+    max-width: 101px;
+    height: auto;
+    
+}
+
+header .header-content .links {
+    flex: 2;
+}
+
+header .header-content .links ul {
+    padding-left: 0;
+    
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+header .header-content .links ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 20px 20px;
+}
+
+header .header-content .links ul li a{
+    color: #00fe39;
+    text-decoration: none;
+}
+
+header .header-content .links ul li.active,
+header .header-content .links ul li:hover,
+header .header-content .links ul li:focus {
+    border-bottom: 6px solid #00fe39;
+}
+
+header .header-content .phone {
+    border-left: 2px solid #2d6fec;
+}
+
+header .header-content .phone a {
+    color: #00fe39;
+    font-weight: 700;
+    text-decoration: none;
+}
+header .header-content .phone a:hover,
+header .header-content .phone a:focus {
+    color: white;
+}
+
+header .header-content .phone a *,
+header .header-content .phone a span:before {
+    color: inherit;
+}
+header .header-content .phone a span {
+    margin-right: 10px;
+}
+
 /* SM breakpoint */
-@media screen and (min-width: 575px) and (max-width: 767px){}
+@media screen and (min-width: 575px) {
+    .container{
+        width: 540px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    header .header-content > div {
+        font-size: 14px;
+    }
+    header .header-content .links ul li {
+        padding: 0 6px 26px;
+    }
+}
 
 /* MD breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px){}
+@media screen and (min-width: 768px) {
+    .container{
+        width: 720px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    header .header-content > div {
+        font-size: 16px;
+    }
+    header .header-content .links ul li {
+        padding: 0 8px 24px;
+    }
+}
 
 /* LG breakpoint */
-@media screen and (min-width: 992px) and (max-width: 1199px){}
+@media screen and (min-width: 992px) {
+    .container{
+        width: 960px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    header .header-content > div {
+        font-size: 20px;
+    }
+    header .header-content .links ul li {
+        padding: 0 16px 20px;
+    }
+}
 
 /* XL breakpoint */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1140px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    header .header-content > div {
+        font-size: 24px;
+    }
+
+    header .header-content .links ul li {
+        padding: 0 20px 20px;
+    }
+}
