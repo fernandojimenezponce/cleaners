@@ -257,6 +257,47 @@ section.slide .overlay-text .text p {
 
 /* end Slide */
 
+.water-img {
+    background-color: #2d6fec;
+    width: 100%;
+}
+
+.water-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* about */
+
+section.content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+section.about img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 14px 8px -8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+
+}
+section.about p{
+    padding: 0 16px;
+    margin-bottom: 19px;
+    font-size: 18px;
+    color:  #444;
+}
+
+
+/* end  about */
+
 @media screen and (max-width: 574px) {
     header{
         height: 90px;
@@ -347,7 +388,21 @@ section.slide .overlay-text .text p {
     section.slide{
         height: 705px;
     }
+    section.about p{
+        padding: 0 50px;
+        margin-bottom: 44px;
+        font-size: 28px;
+    }
 
+    section.content h2 {
+        font-size: 64px;
+        margin-bottom: 40px;
+    }
+
+    section.about img{
+        margin-bottom: 67px;
+    
+    }
     
 }
 
