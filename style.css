@@ -295,6 +295,53 @@ section.about p{
     color:  #444;
 }
 
+section.about .facts{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+section.about .facts .fact {
+    flex: 1;
+    min-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.about .facts .fact span{
+    font-size: 50px;
+    text-align: center;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #1b5edd;
+    border-radius: 50%;
+}
+section.about .facts .fact span i {
+    margin: auto;
+}
+
+section.about .facts .fact span i:before {
+    color: #00fe39;
+}
+
+section.about .facts .fact h4 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+section.about .facts .fact p{
+    color: #444;
+    font-size: 18px;
+    text-align: left;
+}
+
 
 /* end  about */
 
@@ -402,6 +449,33 @@ section.about p{
     section.about img{
         margin-bottom: 67px;
     
+    }
+
+    section.about .facts{
+        flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+    }
+    
+    section.about .facts .fact {
+        flex: 1;
+        max-width: calc(100% / 3);
+        min-width: auto;
+    }
+    
+    section.about .facts .fact span{
+        font-size: 80px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    section.about .facts .fact h4 {
+        font-size: 32px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    
+    section.about .facts .fact p{
+        font-size: 24px;
     }
     
 }
