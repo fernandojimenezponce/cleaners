@@ -80,7 +80,6 @@ body{
 .container{
     display: block;
     width: 100%;
-    padding: 0 15px;
 }
 
 /* Backgrounds */
@@ -100,6 +99,7 @@ header {
     top: 0;
     left: 0;
     height: 80px;
+    z-index: 9999;
 }
 
 header .header-content {
@@ -114,7 +114,7 @@ header .header-content > div {
     display: -webkit-flex;
     flex: 1;
     padding: 0 15px;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 header .header-content > div > * {
@@ -188,6 +188,124 @@ header .header-content .phone a span {
     margin-right: 10px;
 }
 
+header .header-content .links .m-phone-link{
+    display: none;
+    color: transparent;
+    font-size: 16px;
+    background-color: #00fe39;
+    width: 32px;
+    height: 32px;
+    text-decoration: none !important;
+    border-radius: 50%;
+    padding: 0;
+    margin-top: -8px;
+}
+
+header .header-content .links .m-phone-link:hover,
+header .header-content .links .m-phone-link:focus{
+    color: white;
+}
+
+header .header-content .links .m-phone-link a{
+    display: inline-block;
+    margin: auto;
+}
+
+/* end Header */
+
+/* Slide */
+
+section.slide {
+    height: 705px;
+    width: 100%;
+    position: relative;
+    background: url(images/slide.jpg) no-repeat fixed center ;
+    background-size: cover;
+}
+
+section.slide .overlay-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    background: rgba(0,0,0,0.4);
+}
+
+section.slide .overlay-text .text{
+    padding-bottom: 120px;
+    width: 75%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+section.slide .overlay-text .text h1 {
+    color: #00fe39;
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+section.slide .overlay-text .text p {
+    color: white;
+    font-size: 28px;
+}
+
+/* end Slide */
+
+@media screen and (max-width: 574px) {
+    header{
+        height: 90px;
+    }
+    header .header-content{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    header .header-content .phone{
+        display: none;
+    }
+    header .header-content .links,
+    header .header-content .logo{
+        width: 100%;
+        flex: auto;
+    }
+    header .header-content .logo{
+        padding: 8px 0;
+    }
+    header .header-content .logo img{
+        max-width: 60px;
+    }
+    header .header-content .links ul li{
+        padding: 0 8px 14px;
+    }
+    header .header-content .links .m-phone-link{
+        display: inline-flex;
+    }
+
+    section.slide .overlay-text .text {
+        width: 90%;
+        padding-bottom: 25px;
+    }
+
+    section.slide .overlay-text .text h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    section.slide .overlay-text .text p{
+        font-size: 18px;
+    }
+
+    section.slide {
+        height: 480px;
+    }
+
+}
+
 /* SM breakpoint */
 @media screen and (min-width: 575px) {
     .container{
@@ -200,6 +318,15 @@ header .header-content .phone a span {
     }
     header .header-content .links ul li {
         padding: 0 4px 26px;
+    }
+
+    section.slide .overlay-text .text {
+        width: 80%;
+        padding-bottom: 80px;
+    }
+
+    section.slide{
+        height: 550px;
     }
 }
 
@@ -216,6 +343,12 @@ header .header-content .phone a span {
     header .header-content .links ul li {
         padding: 0 8px 24px;
     }
+
+    section.slide{
+        height: 705px;
+    }
+
+    
 }
 
 /* LG breakpoint */
@@ -231,6 +364,10 @@ header .header-content .phone a span {
     }
     header .header-content .links ul li {
         padding: 0 14px 20px;
+    }
+
+    section.slide .overlay-text .text {
+        padding-bottom: 120px;
     }
 }
 
