@@ -288,28 +288,29 @@ section.about img{
     margin-bottom: 20px;
 
 }
-section.about p{
+section.content p{
     padding: 0 16px;
     margin-bottom: 19px;
     font-size: 18px;
     color:  #444;
 }
 
-section.about .facts{
+section.content .facts{
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
 }
 
-section.about .facts .fact {
+section.content .facts .fact {
     flex: 1;
     min-width: 100%;
     text-align: center;
     margin-bottom: 20px;
+    padding: 0 15px;
 }
 
-section.about .facts .fact span{
+section.content .facts .fact span{
     font-size: 50px;
     text-align: center;
     display: inline-flex;
@@ -320,15 +321,15 @@ section.about .facts .fact span{
     background-color: #1b5edd;
     border-radius: 50%;
 }
-section.about .facts .fact span i {
+section.content .facts .fact span i {
     margin: auto;
 }
 
-section.about .facts .fact span i:before {
+section.content .facts .fact span i:before {
     color: #00fe39;
 }
 
-section.about .facts .fact h4 {
+section.content .facts .fact h4 {
     font-size: 24px;
     color: #444;
     margin-top: 20px;
@@ -336,12 +337,76 @@ section.about .facts .fact h4 {
     font-weight: 500;
 }
 
-section.about .facts .fact p{
+section.content .facts .fact p{
     color: #444;
     font-size: 18px;
     text-align: left;
 }
 
+section.content .facts .fact img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+section.water-banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section.banner-cleaning {
+    width: 100%;
+    height: 505px;
+    position: relative;
+    background: url(images/ban-2.jpg) no-repeat fixed center ;
+    background-size: cover;
+}
+
+section.banner-cleaning .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+}
+
+section.banner-cleaning .overlay .content {
+    margin-left: 40%;
+    padding-bottom: 89px;
+}
+
+section.banner-cleaning .overlay .content h2 {
+    color: #00fe39;
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+section.banner-cleaning .overlay .content p{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+section.water-text {
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+}
+section.water-text > img {
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+}
+
+section.water-text p{
+    padding: 0 16px !important;
+    margin-top: 20px;
+}
 
 /* end  about */
 
@@ -392,6 +457,29 @@ section.about .facts .fact p{
         height: 480px;
     }
 
+    section.content .facts .fact{
+        padding: 0;
+    }
+
+    section.banner-cleaning{
+        height: 220px;
+    }
+
+    section.banner-cleaning .overlay .content {
+        margin-left: 0;
+        padding:0 16px;
+        padding-bottom: 20px;
+    }
+
+    section.banner-cleaning .overlay .content h2{
+        font-size: 28px;
+    }
+
+    section.banner-cleaning .overlay .content p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
 }
 
 /* SM breakpoint */
@@ -435,7 +523,7 @@ section.about .facts .fact p{
     section.slide{
         height: 705px;
     }
-    section.about p{
+    section.content p{
         padding: 0 50px;
         margin-bottom: 44px;
         font-size: 28px;
@@ -451,30 +539,30 @@ section.about .facts .fact p{
     
     }
 
-    section.about .facts{
+    section.content .facts{
         flex-wrap: nowrap;
         -webkit-flex-wrap: nowrap;
     }
     
-    section.about .facts .fact {
+    section.content .facts .fact {
         flex: 1;
         max-width: calc(100% / 3);
         min-width: auto;
     }
     
-    section.about .facts .fact span{
+    section.content .facts .fact span{
         font-size: 80px;
         width: 200px;
         height: 200px;
     }
     
-    section.about .facts .fact h4 {
+    section.content .facts .fact h4 {
         font-size: 32px;
         margin-top: 50px;
         margin-bottom: 40px;
     }
     
-    section.about .facts .fact p{
+    section.content .facts .fact p{
         font-size: 24px;
     }
     
