@@ -271,6 +271,12 @@ section.slide .overlay-text .text p {
 
 /* about */
 
+
+section.content {
+    width: 100%;
+    float: left;
+}
+
 section.content h2 {
     font-size: 28px;
     font-weight: 700;
@@ -361,6 +367,7 @@ section.banner-cleaning {
     position: relative;
     background: url(images/ban-2.jpg) no-repeat fixed center ;
     background-size: cover;
+    float: left;
 }
 
 section.banner-cleaning .overlay {
@@ -406,6 +413,41 @@ section.water-text > img {
 section.water-text p{
     padding: 0 16px !important;
     margin-top: 20px;
+}
+
+section.gallery{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+section.gallery .gallery-grid {
+    width: 100%;
+    float: left;
+}
+
+section.gallery .gallery-item,
+section.gallery .grid-sizer{
+    width: 30%;
+    float: left;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+section.gallery .gallery-item.big {
+    width: 61%;
+}
+
+section.gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section.gallery .gallery-carousel{
+    display: none;
+    width: 100%;
+    float: left;
 }
 
 /* end  about */
@@ -478,6 +520,14 @@ section.water-text p{
     section.banner-cleaning .overlay .content p{
         font-size: 18px;
         font-weight: 500;
+    }
+
+    section.gallery .gallery-grid{
+        display: none;
+    }
+
+    section.gallery .gallery-carousel{
+        display: block;
     }
 
 }
