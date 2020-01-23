@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="2084" viewBox="0 0 1440 2084">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#1B5EDD"/>
+        </linearGradient>
+        <path id="b" d="M110 212h1463v1872H110z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-110)">
+        <use fill="url(#a)" xlink:href="#b"/>
+        <use fill="#1B5EDD" xlink:href="#b"/>
+        <circle cx="416" cy="190" r="50" fill="#1B5EDD"/>
+        <circle cx="488" cy="225" r="50" fill="#1B5EDD"/>
+        <circle cx="675" cy="108" r="50" fill="#1B5EDD"/>
+        <circle cx="479.5" cy="108.5" r="36.5" fill="#1B5EDD"/>
+        <circle cx="1121" cy="92" r="50" fill="#1B5EDD"/>
+        <circle cx="1054.5" cy="47.5" r="16.5" fill="#1B5EDD"/>
+        <circle cx="900.5" cy="38.5" r="16.5" fill="#1B5EDD"/>
+        <circle cx="438.5" cy="47.5" r="16.5" fill="#1B5EDD"/>
+        <circle cx="1483" cy="170" r="50" fill="#1B5EDD"/>
+        <circle cx="1550" cy="213" r="50" fill="#1B5EDD"/>
+        <circle cx="829.5" cy="135.5" r="104.5" fill="#1B5EDD"/>
+        <circle cx="589.5" cy="243.5" r="123.5" fill="#1B5EDD"/>
+        <circle cx="789" cy="233" r="147" fill="#1B5EDD"/>
+        <circle cx="246" cy="120" r="120" fill="#1B5EDD"/>
+        <circle cx="316.5" cy="197.5" r="77.5" fill="#1B5EDD"/>
+        <circle cx="95" cy="180" r="95" fill="#1B5EDD"/>
+        <circle cx="1313" cy="120" r="120" fill="#1B5EDD"/>
+        <circle cx="1016.5" cy="212.5" r="104.5" fill="#1B5EDD"/>
+        <circle cx="1193.5" cy="212.5" r="104.5" fill="#1B5EDD"/>
+        <circle cx="1365.5" cy="212.5" r="104.5" fill="#1B5EDD"/>
+    </g>
+</svg>

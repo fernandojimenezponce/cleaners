@@ -74,7 +74,6 @@ html, body {
 }
 body{
     padding-top: 80px;
-    height: 2000px;
 }
 .container-full,
 .container{
@@ -450,6 +449,162 @@ section.gallery .gallery-carousel{
     float: left;
 }
 
+section.contact{
+    background: url(images/water_circles.svg) no-repeat top center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+p.center{ 
+    text-align: center;
+}
+
+section.contact h2,
+section.contact p,
+section.contact label{
+    color: white;
+}
+
+section.contact .column{
+    width: 100%;
+    float: left;
+}
+
+section.contact a{
+    color: #00fe39;
+    display: block;
+    font-size: 48px;
+    text-decoration: none;
+    margin-bottom: 15px;
+
+}
+section.contact a:hover,
+section.contact a:focus{
+    color: white;
+}
+
+section.contact a i:before{
+    color: inherit;
+}
+
+section.contact .contact-form{
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+section.contact .contact-form .form-group{
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+section.contact .contact-form .form-group label{
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+section.contact .contact-form .form-group input,
+section.contact .contact-form .form-group select,
+section.contact .contact-form .form-group textarea{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 16px;
+    padding-left: 5px;
+    border: 0;
+    outline: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+section.contact .contact-form form > .column,
+section.contact .contact-form form > .form-group{
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+section.contact .contact-form .form-group button{
+    display: block;
+    width: 100%;
+    color: #00fe39;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+section.contact .contact-form .form-group button:hover,
+section.contact .contact-form .form-group button:focus{
+    background: #00fe39;
+    color: white;
+}
+
+section.contact .contact-form .follow,
+section.contact .contact-form .social{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+section.contact .contact-form .social{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section.contact .contact-form .social li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul{
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 0;
+    float: left;
+}
+
+footer ul li{
+    display: inline-block;
+    font-size: 16px;
+    color: #444;
+    margin: 0 15px;
+}
+
+footer ul li a{
+    color: #444;
+    font-size: inherit;
+    text-decoration: none;
+}
+footer ul li a:hover,
+footer ul li a:focus{
+    color: #00fe39
+}
+
+
 /* end  about */
 
 @media screen and (max-width: 574px) {
@@ -615,7 +770,16 @@ section.gallery .gallery-carousel{
     section.content .facts .fact p{
         font-size: 24px;
     }
-    
+
+    section.contact{
+        padding-top: 200px;
+    }
+    section.contact .column{
+        width: 50%;
+    }
+    section.contact .contact-form{
+        width: 75%;
+    }
 }
 
 /* LG breakpoint */
